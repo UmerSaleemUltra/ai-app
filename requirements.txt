@@ -1,2 +1,3 @@
 generativeai==0.0.1
 Flask==2.2.3
+Werkzeug==2.2.3
