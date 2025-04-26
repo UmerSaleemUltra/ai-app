@@ -1,2 +1,2 @@
+generativeai==0.0.1
 Flask==2.2.3
-generativeai==1.0.0
