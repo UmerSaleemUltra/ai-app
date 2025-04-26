@@ -1,5 +1,5 @@
 from flask import Flask, render_template_string, request
-import generativeai as genai
+import google.generativeai as genai
 
 # Initialize the app
 app = Flask(__name__)
@@ -7,7 +7,9 @@ app = Flask(__name__)
 # API key and model setup
 API_KEY = "AIzaSyDls8P-uIJb5P-FBIPHZrcK03XlnJCFkOo"
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel("gemini-1.5-turbo")
+model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest")
+
+
 
 # HTML template with embedded Flask templating
 HTML_TEMPLATE = """
